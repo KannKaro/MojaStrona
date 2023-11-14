@@ -2,6 +2,22 @@ body {
     background: linear-gradient(90deg, rgb(95, 114, 93) 0%, rgb(46, 75, 54) 76%);
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 65px;
+    color: #312e28;
+    text-shadow: -9px 5px 4px rgba(0, 0, 0, 0.3);
+    font-style: italic;
+}
+
+.about-me {
+    font-size: 43px;
+    margin-right: 50px;
+    font-family: cursive;
+    color: #312e28;
+}
+
 #kacper {
     width: 400px;
     height: 400px;
@@ -62,4 +78,68 @@ body {
 #gmail-val {
     font-size: 40px;
     margin-top: 11px;
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.container-about-me {
+    display: none;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn {
+    width: 700px;
+    height: 700px;
+    margin-left: 7px;
+    border: 6px solid #312e28;
+    box-shadow: 0px 9px 35px 7px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all .9s;
+    transform: scale(100%);
+}
+
+.btn:hover {
+    transform: scale(110%);
+    transition: all .9s;
+}
+
+#js {
+    height: 350px;
+    width: 350px;
+}
+
+#htmlcss {
+    height: 350px;
+    width: 350px;
+}
+
+.github {
+    width: 400px;
+    height: 70px;
+    border: 6px solid #312e28;
+    box-shadow: 0px 9px 35px 7px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    margin-left: -4px;
+    display: flex;
+    cursor: pointer;
+}
+
+#github-text {
+    font-size: 40px;
+    margin-top: 11px;
+    margin-left: 2px;
 }

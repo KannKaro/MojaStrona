@@ -9,10 +9,25 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Kacper Seemann</h1>
+    <h1>Kacper Seemann</h1>
+    <div class="container-buttons">
+        <button class="btn" id="aboutMeButton"><img src="zdjecia/info.png"></button>
+        <button class="btn" id="githubButton" onclick="window.open('https://github.com/KannKaro')"> <img
+                src="zdjecia/github.png" alt="github"></button>
+        <button class="btn" id="projectsButton"><img src="zdjecia/js.png" id="js"><img src="zdjecia/htmlcss.png"
+                id="htmlcss"></button>
+    </div>
+    <div class="container-about-me">
         <div class="informations">
-            <h2>About Me</h2>
+            <div class="about-me">
+                <div>A</div>
+                <div>B</div>
+                <div>O</div>
+                <div>U</div>
+                <div>T</div>
+                <div>M</div>
+                <div>E</div>
+            </div>
             <img id='kacper' src="zdjecia/kacper.jpg" alt="">
             <div class="my-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare erat vitae
                 odio placerat tincidunt. Sed leo neque, vestibulum nec nisl at, facilisis consequat justo. Aliquam quis
@@ -30,8 +45,13 @@
                     <img id="mail" src="zdjecia/koperta.webp" alt="gmail"><span
                         id="gmail-val">kacpersemman@gmail.com</span>
                 </div>
+                <div class="github" onclick="window.open('https://github.com/KannKaro')">
+                    <img src="zdjecia/github.png" alt="github">
+                    <span id="github-text">GitHub</span>
+                </div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 <script src="scripts.js"></script>
